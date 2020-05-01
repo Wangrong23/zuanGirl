@@ -1,0 +1,10 @@
+github.com/axgle/mahonia v0.0.0-20180208002826-3358181d7394 h1:OYA+5W64v3OgClL+IrOD63t4i/RW7RqrAVl9LTZ9UqQ=
+github.com/axgle/mahonia v0.0.0-20180208002826-3358181d7394/go.mod h1:Q8n74mJTIgjX4RBBcHnJ05h//6/k6foqmgE45jTQtxg=
+github.com/gorilla/websocket v1.4.2 h1:+/TMaTYc4QFitKJxsQ7Yye35DkWvkdLcvGKqM+x0Ufc=
+github.com/gorilla/websocket v1.4.2/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
+github.com/goroom/rand v1.1.0 h1:JwKpAg98CrL/boK2EzW79JqmXfpCLaULpfXLz4a63o4=
+github.com/goroom/rand v1.1.0/go.mod h1:z+D/WBrubV/tOCVYT2zz2vEDCvpYoLTTygboATw+G2o=
+github.com/graarh/golang-socketio v0.0.0-20170510162725-2c44953b9b5f h1:utzdm9zUvVWGRtIpkdE4+36n+Gv60kNb7mFvgGxLElY=
+github.com/graarh/golang-socketio v0.0.0-20170510162725-2c44953b9b5f/go.mod h1:8gudiNCFh3ZfvInknmoXzPeV17FSH+X2J5k2cUPIwnA=
+github.com/shiguanghuxian/txai v1.0.3 h1:sLTkQKTm+1J2CVpDfyZvNvIsBgUDFQZdLl7R0f4dg4U=
+github.com/shiguanghuxian/txai v1.0.3/go.mod h1:yThawDvW53f9EjXIgsqEFcekgk2YagWOPOvY2zEx84w=
