@@ -103,10 +103,9 @@ type Data struct {
 	MsgType       string      `json:"MsgType"`
 	RedBaginfo    interface{} `json:"RedBaginfo"`
 
-	FromUin	int	`json:"FromUin"`
-	ToUin	int	`json:"ToUin"`
-	CurrentQQ	int	`json:"CurrentQQ"`
-
+	FromUin   int `json:"FromUin"`
+	ToUin     int `json:"ToUin"`
+	CurrentQQ int `json:"CurrentQQ"`
 }
 type Message struct {
 	CurrentPacket CurrentPacket `json:"CurrentPacket"`
@@ -114,6 +113,20 @@ type Message struct {
 }
 type Channel struct {
 	Channel string `json:"channel"`
+}
+
+type PicContent struct {
+	Content  string `json:"Content"`
+	FileMd5  string `json:"FileMd5"`
+	FileSize int    `json:"FileSize"`
+	Path     string `json:"Path"`
+	Tips     string `json:"Tips"`
+	Url      string `json:"Url"`
+}
+
+type AtContent struct {
+	Content string `json:"Content"`
+	UserID  []int  `json:"UserID"`
 }
 
 func Set(url string, qq1 string) {
@@ -159,7 +172,7 @@ func SendPic(ToUser int, SendToType int, Content string, PicUrl string) {
 	body, _ := ioutil.ReadAll(resp.Body)
 	fmt.Println(string(body))
 }
-func Send(ToUser int, SendToType int, Content string) {
+func Send(ToUser int, SendToType int, Content string, AtUser int) {
 	//发送文本信息
 	tmp := make(map[string]interface{})
 	tmp["toUser"] = ToUser
@@ -167,7 +180,7 @@ func Send(ToUser int, SendToType int, Content string) {
 	tmp["sendMsgType"] = "TextMsg"
 	tmp["content"] = Content
 	tmp["groupid"] = 0
-	tmp["atUser"] = 0
+	tmp["atUser"] = AtUser
 	tmp["pwd"] = "mcoo"
 	tmp1, _ := json.Marshal(tmp)
 
